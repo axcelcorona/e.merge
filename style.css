@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Poppins:wght@600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Backgorun-color: #f9f9f9;
+  --Primary-color: #003b85;
+  --WhatsApp-color: #25d366;
+  --Color-text: #263238;
+  --Border: 1px solid rgba(0, 0, 0, 0.15);
+  --Box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+body {
+  font-family: "Poppins", sans-ser;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
