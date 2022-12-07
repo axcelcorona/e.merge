@@ -10,6 +10,7 @@
   --Backgorun-color: #f9f9f9;
   --Primary-color: #003b85;
   --WhatsApp-color: #25d366;
+  --WhatsApp-color-active: #128c7e;
   --Color-text: #263238;
   --Border: 1px solid rgba(0, 0, 0, 0.15);
   --Box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
@@ -31,6 +32,11 @@ a {
 .container {
   max-width: 80%;
   margin: 0 auto;
+}
+
+.nav__icon-menu--close,
+.nav__icon-menu--open {
+  display: none;
 }
 
 .material-symbols-outlined {
@@ -72,11 +78,13 @@ a {
 }
 
 .nav__links {
+  display: none;
   gap: 10px;
   display: flex;
 }
 
 .nav--link {
+  display: none;
   color: var(--Primary-color);
   padding: 15px 10px;
 }
@@ -88,10 +96,11 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row-reverse;
 }
 
 .main__img {
-  width: 65%;
+  width: 55%;
 }
 
 .main__info {
@@ -119,17 +128,23 @@ a {
 }
 
 .main__btn {
-  padding: 10px 0;
   gap: 20px;
   border: none;
-  width: 300px;
   display: flex;
+  cursor: pointer;
+  padding: 10px 25px;
   border-radius: 50px;
   align-items: center;
   justify-content: center;
+  text-transform: uppercase;
   box-shadow: var(--Box-shadow);
   color: var(--Backgorun-color);
   background-color: var(--WhatsApp-color);
+}
+
+.main__btn:hover {
+  transition: all 0.394s;
+  background-color: var(--WhatsApp-color-active);
 }
 
 /* Responsive */
@@ -145,9 +160,11 @@ a {
     position: absolute;
     top: 25px;
     right: 75px;
+    display: none;
   }
 
   .nav__links {
+    display: none;
     top: 0;
     right: -100%;
     width: 100vw;
@@ -171,5 +188,31 @@ a {
 
   .main__container {
     flex-wrap: wrap-reverse;
+  }
+
+  .main__img {
+    width: 75%;
+  }
+
+  .main__logo {
+    width: 25%;
+  }
+
+  .main__title {
+    font-size: 2rem;
+  }
+
+  .main__subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .main__title {
+    font-size: 1.3rem;
+  }
+
+  .main__img {
+    width: 95%;
   }
 }
