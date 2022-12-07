@@ -13,26 +13,53 @@
   </head>
 
   <body>
-    <head class="header__nav">
+    <header class="header__nav">
       <nav class="nav__container container">
         <img src="./img/logo.svg" class="header__img" alt="logo e.merge" />
-        <ul>
+
+        <input type="checkbox" id="check" />
+        <label for="check">
+          <span
+            class="material-symbols-outlined nav__icon-menu nav__icon-menu--open"
+          >
+            menu
+          </span>
+        </label>
+
+        <ul class="nav__links">
           <li><a href="#inicio" class="nav--link">Inicio</a></li>
           <li><a href="#about" class="nav--link">Nosotros</a></li>
           <li><a href="#contac" class="nav--link">Contactos</a></li>
         </ul>
-        <span class="material-symbols-outlined nav__icon-menu"> menu </span>
+        <label for="check">
+          <span
+            class="material-symbols-outlined nav__icon-menu nav__icon-menu--close"
+          >
+            close
+          </span>
+        </label>
       </nav>
-    </head>
+    </header>
 
-    <main class="container">
-      <img src="./img/Construction-pana.svg" alt="bluiding web" />
-      <section class="mian__info">
-        <img src="./img/logo.svg" alt="logo e.merge" />
-        <h1>E.MERGE PANAMÁ</h1>
-        <h2>Nos estamos transformando para brindarte mejores servicios IT.</h2>
-        <button>
-          Contactanos <img src="./img/WhatsApp-icon.svg" alt="" />
+    <main class="container main__container">
+      <img
+        src="./img/Construction-pana.svg"
+        class="main__img"
+        alt="bluiding web"
+      />
+      <section class="main__info">
+        <img src="./img/logo.svg" class="main__logo" alt="logo e.merge" />
+        <h1 class="main__title">E.MERGE PANAMÁ</h1>
+        <h2 class="main__subtitle">
+          Nos estamos transformando para brindarte mejores servicios IT.
+        </h2>
+        <button class="main__btn">
+          Contactanos
+          <img
+            src="./img/WhatsApp-icon.svg"
+            alt="whatsApp logo"
+            class="whatsApp-logo"
+          />
         </button>
       </section>
     </main>
